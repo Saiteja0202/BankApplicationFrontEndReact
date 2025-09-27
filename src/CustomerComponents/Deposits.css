@@ -1,0 +1,59 @@
+.deposits-page {
+    padding: 2rem;
+    background-color: #f9f9f9;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;
+  }
+  
+  .deposits-page h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #2c3e50;
+  }
+  
+  .deposits-page h3 {
+    margin-top: 2rem;
+    font-size: 1.5rem;
+    color: #34495e;
+  }
+  
+  .deposits-page button {
+    margin: 0.5rem 0.5rem 1rem 0;
+    padding: 0.6rem 1.2rem;
+    font-size: 1rem;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .deposits-page button:hover {
+    background-color: #2980b9;
+  }
+  
+  .deposits-page button:disabled {
+    background-color: #bdc3c7;
+    cursor: not-allowed;
+  }
+  
+  .deposits-page ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .deposits-page li {
+    background-color: #ecf0f1;
+    margin: 0.5rem 0;
+    padding: 0.8rem;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .deposits-page input[type="radio"] {
+    margin-right: 0.5rem;
+  }
+  
