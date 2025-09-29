@@ -1,8 +1,7 @@
-.customer-home-container {
+.admin-home-container {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     min-height: 100vh;
     background-color: #f4f6f8;
-   
   }
   
   .nav-bar {
@@ -11,17 +10,16 @@
     left: 0;
     width: 100%;
     z-index: 1000;
-  
+    height: 10vh;
     display: flex;
     justify-content: space-between;
     align-items: center;
     background-color: #2c3e50;
     padding: 0.5rem 2rem;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     flex-wrap: wrap;
-  
   }
-
+  
   .bank-name {
     color: white;
     font-weight: bold;
@@ -93,14 +91,12 @@
     background-color: white;
     border: 1px solid #ccc;
     border-radius: 6px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     padding: 0.5rem 1rem;
     z-index: 100;
     display: flex;
     flex-direction: column;
   }
-  
-  
   
   .logout-btn {
     background-color: #e74c3c;
@@ -110,6 +106,10 @@
     border-radius: 4px;
     cursor: pointer;
   }
+  .role{
+    color: white;
+    padding-left: 50px;
+  }
   
   .logout-btn:hover {
     background-color: #c0392b;
@@ -117,7 +117,7 @@
   
   .main-content {
     padding: 2rem;
-   
+    padding-top: 5rem; 
   }
   
   @media (max-width: 768px) {
@@ -144,11 +144,11 @@
     .dropdown-menu {
       top: 50px;
       right: 10px;
-     
     }
   
     .main-content {
       padding: 1rem;
+      padding-top: 6rem;
     }
   }
   

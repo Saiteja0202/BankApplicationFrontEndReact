@@ -1,5 +1,7 @@
+
 .home-content {
   padding: 2rem;
+  margin-top: 50px;
 }
 
 .details-container {
@@ -14,9 +16,17 @@
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
   flex: 1 1 45%;
   min-width: 300px;
- 
 }
 
+.inline-fields {
+  display: flex;
+  gap: 20px;
+  margin-top: 10px;
+}
+
+.inline-fields label {
+  flex: 1;
+}
 
 .details-box h2 {
   margin-bottom: 1rem;
@@ -47,7 +57,7 @@
   padding: 0.5rem 1rem;
   border-radius: 4px;
   cursor: pointer;
- width:50%;
+  width: 50%;
 }
 
 .details-box button:hover {
@@ -84,6 +94,30 @@
   color: #7f8c8d;
 }
 
+.details {
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  margin: auto;
+  padding: 20px;
+}
+
+.details1 span {
+  font-weight: bold;
+}
+
+.details1 button {
+  margin-left: 110px;
+}
+
+.details input {
+  width: 100%;
+}
+
+.details button {
+  text-align: center;
+  margin-left: 110px;
+}
+
 .account-list {
   list-style-type: none;
   padding-left: 0;
@@ -95,7 +129,6 @@
   margin-bottom: 1rem;
   border-radius: 6px;
   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05);
-  text-align: center;
 }
 
 .delete-button {
@@ -112,7 +145,60 @@
   background-color: #cc0000;
 }
 
-span {
-  font-weight: bold;
-  font-size: 18px;
+
+@media (max-width: 1024px) {
+  .details-container {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .details-box {
+    width: 100%;
+    min-width: unset;
+  }
+
+  .inline-fields {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .details-box input {
+    width: 100%;
+  }
+
+  .details-box button {
+    width: 100%;
+  }
+
+  .details1 button,
+  .details button {
+    margin-left: 0;
+    width: 100%;
+    margin-top: 1rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .home-content {
+    padding: 1rem;
+  }
+
+  .dashboard-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .dashboard-card {
+    padding: 1rem;
+  }
+
+  .details1 button,
+  .details button {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .account-list li {
+    font-size: 0.95rem;
+    padding: 0.75rem;
+  }
 }
