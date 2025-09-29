@@ -121,7 +121,7 @@ export default function Login() {
           onChange={(e) => setEmail(e.target.value)}
           required
         />
-        {isOtpVerified && <span className="verified-star">⭐</span>}
+        {isOtpVerified && <span ><img src="/public/Verified_Icon.png" className="verified-star"></img></span>}
       </div>
 
       <input

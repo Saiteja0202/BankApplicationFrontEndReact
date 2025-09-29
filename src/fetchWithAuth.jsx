@@ -1,6 +1,6 @@
 export async function fetchWithAuth(url, options = {}) {
   const authToken = sessionStorage.getItem("token");
-  console.log("Sending token :  "+authToken);
+  // console.log("Sending token :  "+authToken);
   const headers = {
     "Content-Type": "application/json",
     ...(options.headers || {}),

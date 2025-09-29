@@ -11,6 +11,9 @@ import Deposits from './CustomerComponents/Deposits';
 import Cards from './CustomerComponents/Cards';
 import Transactions from './CustomerComponents/Transactions';
 import CustomerContent from './CustomerComponents/CustomerContent';
+import AdminDeposits from './AdminComponents/AdminDeposits';
+import AdminCards from './AdminComponents/AdminCards';
+import AdminLoans from './AdminComponents/AdminLoans';
 import './App.css';
 
 function App() {
@@ -36,14 +39,21 @@ function App() {
   <Route path="transactions" element={<Transactions />} />
 </Route>
 
-          <Route
-            path="/adminhome"
-            element={
-              <AuthGuard role="ADMIN">
-                <AdminHome />
-              </AuthGuard>
-            }
-          />
+          
+<Route
+  path="/adminhome"
+  element={
+    <AuthGuard role="ADMIN">
+      <AdminHome />
+    </AuthGuard>
+  }
+>
+  <Route path="/adminhome/admindeposits" element={<AdminDeposits />} />
+  <Route path="/adminhome/adminloans" element={<AdminLoans />} />
+  <Route path="/adminhome/admincards" element={<AdminCards />} />
+</Route>
+            
+          
           <Route path="/404" element={<NotFound />} />
           <Route path="/landingpage" element={<LandingPage />} />
           
