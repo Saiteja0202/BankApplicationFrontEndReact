@@ -93,7 +93,7 @@ export default function CustomerContent() {
       }
     } catch (error) {
       console.error("Failed to delete account:", error);
-      Swal.fire("Error", "Failed to delete account", "error");
+      Swal.fire("Error", "Failed to delete account : You have to close the transactions to delete the Account.", "error");
     }
   };
 
@@ -112,6 +112,10 @@ export default function CustomerContent() {
       const data = await response.json();
       console.log("Fetched accounts data:", data);
 
+      if (Array.isArray(data) && data.length > 0) {
+        sessionStorage.setItem('account_ID', data[0].account_id);
+      }
+      
       if (!Array.isArray(data)) {
         setAccounts([]);
         setError("Unexpected data format received from server.");
