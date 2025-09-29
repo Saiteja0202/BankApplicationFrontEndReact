@@ -170,12 +170,12 @@ export default function Cards() {
           </ul>
 
           <div className="action-buttons">
-            <button onClick={handleRequestBlock} disabled={!selectedCardId}>
+            {/* <button onClick={handleRequestBlock} disabled={!selectedCardId}>
               Request Block
-            </button>
-            <button onClick={handleRequestDelete} disabled={!selectedCardId}>
+            </button> */}
+            {/* <button onClick={handleRequestDelete} disabled={!selectedCardId}>
               Request Delete
-            </button>
+            </button> */}
           </div>
         </>
       )}
